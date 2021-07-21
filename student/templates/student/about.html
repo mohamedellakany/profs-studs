@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% include 'student/_guest_header.html' with active='about' %}
+  <h2>Welcome On Board</h2>
+  <p class="lead">
+    If You Have an Account, Please <a href="{% url 'login' %}">Login</a><br/>
+     Or, You Can Register As <a href="{% url 'signup' %}">Student Here</a> Or as <a href="{% url 'teacher_signup' %}">Teacher Here</a>.
+  </p>
+  <hr>
+{% endblock %}
